@@ -63,7 +63,7 @@ class Estismail
             return 'no required field';
         }
 
-        $response = json_decode($this->sendRequest('POST', $url, $params), true);
+        $response = $this->sendRequest('POST', $url, $params);
 
         return $response['id'];
     }
@@ -109,6 +109,6 @@ class Estismail
         $response = curl_exec($ch);
         curl_close($ch);
 
-        return $response;
+        return json_decode($response,true);
     }
 }
