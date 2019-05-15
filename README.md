@@ -12,6 +12,7 @@ $estismail = Estismail::init('api_key');
 ### Add email to list
 
 ```php
+//required fields for this method
 $fields = [
     'list_id' => 11111,
     'email' => 'admin@admin.ru',
