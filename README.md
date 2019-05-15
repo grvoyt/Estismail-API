@@ -4,7 +4,7 @@
 ```php
 require 'estismail.php';
 
-use Grvoyt\Estismail\Estismail;
+use Estismail\Estismail;
 
 $estismail = Estismail::init('api_key');
 ```

@@ -1,6 +1,6 @@
 <?php
 
-namespace Grvoyt\Estismail;
+namespace Estismail;
 
 class Estismail
 {
